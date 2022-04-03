@@ -48,7 +48,7 @@ var content = document.getElementById('section');
      showSidebar = !showSidebar;
 
     if(showSidebar){
-        navigation.style.marginLeft ='-20vw';
+        navigation.style.marginLeft ='-10vw';
         navigation.style.animationName = 'showSidebar';
         content.style.filter = 'blur(10px)';
 
