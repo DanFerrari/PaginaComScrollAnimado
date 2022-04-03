@@ -1,59 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css" />
 
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/importResponse.css" />
 
     <title>Scrolling Website | Vanilla Javascript</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <a href="#" class="logo"> logo</a>
+  <body>
+    <header id="header">
+      <button onclick="toggleSideBar()" class="btn_icon_header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
 
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li>
-                <a href="#">Sobre </a>
-            </li>
-            <li><a href="#">Trabalhe conosco</a></li>
-            <li>
-                <a href="#">Fale Conosco</a>
-            </li>
-        </ul>
+      <a href="#" class="logo"> logo</a>
 
-
-
+      <ul class="navigation" id="navigation">
+          
+        <button onclick="toggleSideBar()" class="btn_icon_header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+        <li><a href="#" class="active">Home</a></li>
+        <li>
+          <a href="#">Sobre </a>
+        </li>
+        <li><a href="#">Trabalhe conosco</a></li>
+        <li>
+          <a href="#">Fale Conosco</a>
+        </li>
+      </ul>
     </header>
 
-    <section>
-        <img src="assets/imgs/stars.png" alt="" id="stars">
-        <img src="assets/imgs/moon.png" alt="" id="moon">
-        <img src="assets/imgs/mountains_behind.png" alt="" id="mountains_behind">
-        
-        <h2 id="text">Moon Light</h2>
-        
-        <a href="#sec" id="btn">Explore</a>
-        
-        <img src="assets/imgs/mountains_front.png" alt="" id="mountains_front">
+    <section class="section" tabindex="0" onclick="closeSidebar()">
+      <img src="assets/imgs/stars.png" alt="" id="stars" />
+      <img src="assets/imgs/moon.png" alt="" id="moon" />
+      <img
+        src="assets/imgs/mountains_behind.png"
+        alt=""
+        id="mountains_behind"
+      />
 
+      <h2 id="text">Moon Light</h2>
 
+      <a href="#sec" id="btn">Explore</a>
 
+      <img src="assets/imgs/mountains_front.png" alt="" id="mountains_front" />
     </section>
 
     <div class="sec" id="sec">
-        <h2>Scrolling Effects</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum corporis fugiat voluptate aut, fuga nam sapiente debitis. Odio exercitationem ipsam asperiores esse aliquid velit doloremque aut repudiandae recusandae! Dignissimos, veniam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore incidunt eveniet accusantium facilis ratione at, exercitationem tenetur dolores optio omnis voluptatum quas rerum. Aliquid id qui a! Unde, at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos, perferendis voluptatibus error aliquam at placeat id iure a? Enim tenetur accusantium rerum laboriosam quibusdam! Rem vel itaque saepe deleniti?<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, nostrum nihil rerum, maxime optio esse culpa cum consectetur expedita deleniti officiis incidunt accusamus nulla aut! Totam nemo dolore amet saepe. <br> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita neque debitis voluptas! Tenetur temporibus maxime consectetur delectus, illum est ad. Dolores nemo quaerat repellendus, voluptatum doloremque maxime quae laboriosam nostrum!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum corporis fugiat voluptate aut, fuga nam sapiente debitis. Odio exercitationem ipsam asperiores esse aliquid velit doloremque aut repudiandae recusandae! Dignissimos, veniam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore incidunt eveniet accusantium facilis ratione at, exercitationem tenetur dolores optio omnis voluptatum quas rerum. Aliquid id qui a! Unde, at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos, perferendis voluptatibus error aliquam at placeat id iure a? Enim tenetur accusantium rerum laboriosam quibusdam! Rem vel itaque saepe deleniti?<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum corporis fugiat voluptate aut, fuga nam sapiente debitis. Odio exercitationem ipsam asperiores esse aliquid velit doloremque aut repudiandae recusandae! Dignissimos, veniam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore incidunt eveniet accusantium facilis ratione at, exercitationem tenetur dolores optio omnis voluptatum quas rerum. Aliquid id qui a! Unde, at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos, perferendis voluptatibus error aliquam at placeat id iure a? Enim tenetur accusantium rerum laboriosam quibusdam! Rem vel itaque saepe deleniti?<br><br></p>
+      <h2>Scrolling Effects</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+        corporis fugiat voluptate aut, fuga nam sapiente debitis. Odio
+        exercitationem ipsam asperiores esse aliquid velit doloremque aut
+        repudiandae recusandae! Dignissimos, veniam. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Eligendi inventore incidunt eveniet
+        accusantium facilis ratione at, exercitationem tenetur dolores optio
+        omnis voluptatum quas rerum. Aliquid id qui a! Unde, at?Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ipsum dignissimos,
+        perferendis voluptatibus error aliquam at placeat id iure a? Enim
+        tenetur accusantium rerum laboriosam quibusdam! Rem vel itaque saepe
+        deleniti?<br /><br />Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Sit, nostrum nihil rerum, maxime optio esse culpa cum consectetur
+        expedita deleniti officiis incidunt accusamus nulla aut! Totam nemo
+        dolore amet saepe. <br />
+        <br />
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita neque
+        debitis voluptas! Tenetur temporibus maxime consectetur delectus, illum
+        est ad. Dolores nemo quaerat repellendus, voluptatum doloremque maxime
+        quae laboriosam nostrum!Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Laborum corporis fugiat voluptate aut, fuga nam
+        sapiente debitis. Odio exercitationem ipsam asperiores esse aliquid
+        velit doloremque aut repudiandae recusandae! Dignissimos, veniam. Lorem
+        ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore
+        incidunt eveniet accusantium facilis ratione at, exercitationem tenetur
+        dolores optio omnis voluptatum quas rerum. Aliquid id qui a! Unde,
+        at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+        dignissimos, perferendis voluptatibus error aliquam at placeat id iure
+        a? Enim tenetur accusantium rerum laboriosam quibusdam! Rem vel itaque
+        saepe deleniti?<br /><br />Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Laborum corporis fugiat voluptate aut, fuga nam
+        sapiente debitis. Odio exercitationem ipsam asperiores esse aliquid
+        velit doloremque aut repudiandae recusandae! Dignissimos, veniam. Lorem
+        ipsum dolor sit, amet consectetur adipisicing elit. Eligendi inventore
+        incidunt eveniet accusantium facilis ratione at, exercitationem tenetur
+        dolores optio omnis voluptatum quas rerum. Aliquid id qui a! Unde,
+        at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+        dignissimos, perferendis voluptatibus error aliquam at placeat id iure
+        a? Enim tenetur accusantium rerum laboriosam quibusdam! Rem vel itaque
+        saepe deleniti?<br /><br />
+      </p>
     </div>
 
-
-<script src="assets/js/script.js"></script>
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

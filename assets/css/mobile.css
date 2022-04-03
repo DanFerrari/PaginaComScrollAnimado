@@ -1,0 +1,48 @@
+
+.section{
+    transition: 1s;
+    text-align: center;
+    
+}
+
+
+.btn_icon_header{
+display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+.navigation{
+position: absolute;
+display: flex;
+flex-direction: column;
+top: 0;
+background-color:#1c0522;
+height: 400px;
+width: 45vw;
+padding: 1em;
+margin-left: -100vw;
+transition: 0.8s;
+
+
+}
+.navigation li{
+    margin: 25px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.navigation button{
+    margin-bottom: 30px;
+}
+
+
+@keyframes showSidebar{
+from{margin-left: -100vw; }
+top{margin-left: -10vw; }
+}
+
+

@@ -1,3 +1,4 @@
+ 
 let stars = document.getElementById('stars');
 
 let moon = document.getElementById('moon');
@@ -34,3 +35,42 @@ function move(){
     header.style.top = value * 0.5 + 'px';
 
 }
+
+var navigation = document.getElementById('navigation');
+ 
+
+var content = document.getElementById('section');
+
+
+ var showSidebar = false;
+
+ function toggleSideBar(){
+     showSidebar = !showSidebar;
+
+    if(showSidebar){
+        navigation.style.marginLeft ='-20vw';
+        navigation.style.animationName = 'showSidebar';
+        content.style.filter = 'blur(10px)';
+
+
+    }
+    else{
+        navigation.style.marginLeft ='-100vw';
+        navigation.style.animationName = '';
+        content.style.filter = '';
+    }
+    
+
+ }
+
+ function closeSidebar(){
+     if(showSidebar){
+         toggleSideBar();
+     }
+ }
+
+ window.addEventListener('resize',function(event){
+     if(this.window.innerWidth > 768 && showSidebar){
+         toggleSideBar();
+     }
+ });
